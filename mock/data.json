@@ -1,0 +1,56 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "How to make Sakura Matcha Nama Chocolate (recipe)",
+      "body": "Have you ever heard of nama chocolate? It is basically a very thick, rich and velvety chocolate candy that contains mostly cream and chocolate. Its texture is quite distinct from the regular chocolate mostly from the extremely high moisture content from the large amount of cream used. Its velvety and silky palate often reminds us of freshness. That’s why sometimes you will hear people call it “fresh” chocolate. Nama chocolate is originated from Japan and the most well-known brand is Royce. Before, only when I visited Japan or had a flight layover could I buy these unique delicacies. They have many different flavours, and the flavour that I particularly like is matcha (green tea). Well, I’m not the kind of person who travels often (not that I want to, I’d rather stay in the kitchen :-P ); hence I need to re-create this candy at home to satisfy my craving. And guess what, they are surprisingly easy to make and taste just as delicious."
+    },
+    {
+      "id": 2,
+      "title": "Sweet Soft Buns (Basic, Crescent & Braided Shape) (recipe)",
+      "body": "I still remember back when I was still a young kid, I would wake up every day and breakfast would already be at the table, prepared by mom. We (my brother and I) would have different breakfast items every day, but my favorite was always these little sweet soft buns that my mom would buy from the bakery store close to our house. I would always take a good long sniff at the delightful buttery aroma while throwing it from one hand to another as it was still steaming hot. Then I would eagerly take a bite to find out what the filling would be inside that soft pillow-y bread. Mom would be smiling and telling me to hurry and finish off my breakfast before I’m late for school."
+    },
+    {
+      "title": "Neapolitan Mousse Cake (recipe)",
+      "body": "Nothing said fun party and extravaganza like a tri-colour layer cake: why settle for only one, or two layers of colours and flavours when you can have 3 all at once? Today’s show-stopper cake is the Neapolitan Mousse Cake, inspired by the tri-colour Neapolitan ice cream, with its signature chocolate-vanilla-strawberry flavour combination.\n\nNeapolitan ice cream takes its name from the city of Naples in Italy, and the ice cream has three layers because it resembles the tri-colour Italian flag. The reason why chocolate-vanilla-strawberry is the most popular trio is because they were some of the most accessible ingredients when this ice cream was brought over to the US by Italian immigrants, but I have seen other interesting variations like chocolate-vanilla-raspberry, or pistachio-vanilla-cherry.",
+      "id": 3
+    },
+    {
+      "title": "No-Bake Matcha (Green tea) Cheesecake recipe",
+      "body": "Calling all green tea lovers, have you had your green tea fixed today? If not, this no-bake matcha cheesecake is waiting for you. Matcha may be a new thing for the Western world, but it is in fact ancient. It has been the heart of the famous Japanese tea ceremony for over 900 years and is well-known for its unique flavour and remarkable health benefits. Matcha has just recently gained recognition world-wide and food enthusiasts are discovering new uses for it every day: matcha latte, matcha mousse, matcha cake, matcha ice cream, etc. you name it!\n\nI myself am also a green tea lover. Sweet and grassy with an earthy and slightly bitter flavour, it is just so natural and refreshing. What makes it even a better? The combination of the earthy matcha and the light, cool and creamy cheesecake! Deadly, deadly combo! You will be enjoying this delicious twist on the classic no-bake cheesecake as much as I do. And for those who haven’t heard of matcha? Come on, try it out, you are behind!",
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "Good post",
+      "author": "Brad",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "body": "Sound great",
+      "author": "Olivia",
+      "postId": 2
+    },
+    {
+      "id": 3,
+      "body": "Tasty",
+      "author": "James",
+      "postId": 1
+    },
+    {
+      "body": "Yeah, good job",
+      "author": "Marry",
+      "postId": 2,
+      "id": 4
+    },
+    {
+      "body": "Best recipe ever",
+      "author": "Marry",
+      "postId": 4,
+      "id": 5
+    }
+  ]
+}
