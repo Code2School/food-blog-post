@@ -1,0 +1,54 @@
+<article class="post-detail container my-4">
+  <section>
+    <ng-container *ngIf="post$ | async as post">
+      <h2>{{ post.title }}</h2>
+      <p>{{ post.body }}</p>
+    </ng-container>
+  </section>
+
+  <hr>
+
+  <section>
+    <ng-container *ngIf="comments$ | async as comments">
+      <h3 class="mb-5">{{ comments.length }} Comments</h3>
+      <div *ngFor="let comment of comments">
+        <h5>{{ comment.author }}</h5>
+        <p>{{ comment.body }}</p>
+        <hr>
+      </div>
+    </ng-container>
+  </section>
+
+  <section class="row">
+    <h3 class="col-12 col-lg-8">Leave a reply</h3>
+    <form class="col-12 col-lg-8" [formGroup]="commentForm" (ngSubmit)="onSubmit()">
+
+      <div class="form-group">
+        <label for="comment">Comment</label>
+        <textarea
+          id="comment"
+          class="form-control"
+          formControlName="comment"
+          cols="45"
+          rows="8"
+          maxlength="255"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="author">Name</label>
+        <input
+          id="author"
+          class="form-control"
+          formControlName="author" />
+      </div>
+
+      <div class="form-group d-flex justify-content-end">
+        <button
+          type="submit"
+          class="btn btn-primary align-self-end"
+          [disabled]="!commentForm.valid">Post Comment</button>
+      </div>
+    </form>
+  </section>
+
+</article>
