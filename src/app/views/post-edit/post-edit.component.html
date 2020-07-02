@@ -1,0 +1,9 @@
+<article class="container my-4">
+  <h3 class="text-center">Update Story</h3>
+  <section class="row justify-content-center">
+    <blog-post-editor *ngIf="post$ | async as post"
+      class="col-12 col-sm-10"
+      (publish)="handlePublish($event)"
+      [post]="post"></blog-post-editor>
+  </section>
+</article>

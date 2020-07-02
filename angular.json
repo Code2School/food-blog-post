@@ -28,7 +28,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              {
+                "input": "./node_modules/bootstrap/dist/css/bootstrap.css"
+              }
             ],
             "scripts": []
           },
@@ -66,7 +69,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "blogs-page:build"
+            "browserTarget": "blogs-page:build",
+            "proxyConfig": "remote.proxy.conf.json"
           },
           "configurations": {
             "production": {
@@ -123,6 +127,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "blogs-page"
+    }
+  },
+  "defaultProject": "blogs-page",
+  "cli": {
+    "analytics": "f452e482-cf88-40e5-8792-f3cd4bb11572"
+  }
 }

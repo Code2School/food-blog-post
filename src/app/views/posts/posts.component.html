@@ -1,0 +1,34 @@
+<article class="posts container my-4">
+  <section
+    class="posts-item mb-3"
+    *ngFor="let post of posts$ | async">
+    <div class="d-flex">
+      <h3 class="flex-grow-1">
+        <a
+          uiSref="post-detail"
+          [uiParams]="{ id: post.id }">{{ post.title }}</a>
+      </h3>
+      <div class="btn-group" dropdown>
+        <button dropdownToggle type="button" class="btn btn-secondary"
+                aria-controls="actionDropdown">
+          <fa-icon [icon]="faEllipsisV"></fa-icon>
+        </button>
+        <ul id="actionDropdown" *dropdownMenu class="dropdown-menu"
+            role="menu" aria-labelledby="button-basic">
+          <li role="menuitem">
+            <a
+              class="dropdown-item"
+              uiSref="post-edit"
+              [uiParams]="{ id: post.id }">Edit</a>
+          </li>
+          <li role="menuitem">
+            <a
+              class="dropdown-item"
+              (click)="removePost(post.id)">Delete</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p class="posts-item-description">{{ post.body }}</p>
+  </section>
+</article>
